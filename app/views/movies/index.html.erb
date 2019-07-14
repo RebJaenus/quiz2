@@ -1,0 +1,10 @@
+<h1>A list of some movies I have</h1>
+
+<% @movies.each do |movie| %>
+  <div>
+    <h1><%= movie.name %></h1><br />
+    <i><%= movie.genre %></i><br />
+    <p><%= movie.format %></p><br />
+  </div>
+  <hr />
+<% end %>
